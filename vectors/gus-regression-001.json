@@ -1,0 +1,105 @@
+{
+ "schema": "gus-regression-001",
+ "gus_version": "2.5.0b1",
+ "gus_spec": "2.1.0",
+ "description": "Regresión F2: el Gran Tempalum opera simétricamente en la era AY (años < 0); consumido por Python (tests), JS, C y tools/verify_gus.py",
+ "deterministic": true,
+ "calendar_ay": [
+  {
+   "canonical": "0001AY-00-11-B",
+   "day_index": -1,
+   "weekday": "Sabatyeh",
+   "gregorian": [
+    -5,
+    3,
+    20
+   ],
+   "gran_tempalum": true,
+   "why": "Nuvivid VII: último día del Tempalum de 0001AY (GT de 371 días)"
+  },
+  {
+   "canonical": "0001AY-00-01-A",
+   "day_index": -11,
+   "weekday": "Aisterdyia",
+   "gregorian": [
+    -5,
+    3,
+    10
+   ],
+   "gran_tempalum": true,
+   "why": "primer día de Tempalum (Unictis)"
+  },
+  {
+   "canonical": "0001AY-00-06-L",
+   "day_index": -6,
+   "weekday": "Loondyia",
+   "gregorian": [
+    -5,
+    3,
+    15
+   ],
+   "gran_tempalum": true,
+   "why": "día medio de Tempalum"
+  },
+  {
+   "canonical": "0001AY-00-10-V",
+   "day_index": -2,
+   "weekday": "Viendyia",
+   "gregorian": [
+    -5,
+    3,
+    19
+   ],
+   "gran_tempalum": true,
+   "why": "vecino del final"
+  },
+  {
+   "canonical": "0001AY-01-01-S",
+   "day_index": -371,
+   "weekday": "Soludyia",
+   "gregorian": [
+    -6,
+    3,
+    15
+   ],
+   "gran_tempalum": true,
+   "why": "inicio del año -1 (GT): -371 días"
+  },
+  {
+   "canonical": "0001AY-12-30-M",
+   "day_index": -12,
+   "weekday": "Mardyia",
+   "gregorian": [
+    -5,
+    3,
+    9
+   ],
+   "gran_tempalum": true,
+   "why": "vecino inmediato DY antes del Tempalum"
+  },
+  {
+   "canonical": "0012AY-03-13-M",
+   "day_index": -4317,
+   "weekday": "Mardyia",
+   "gregorian": [
+    -17,
+    5,
+    26
+   ],
+   "gran_tempalum": true,
+   "why": "año GT profundo (-12)"
+  },
+  {
+   "canonical": "12012AY-10-23-V",
+   "day_index": -4387000,
+   "weekday": "Viendyia",
+   "gregorian": [
+    -12016,
+    1,
+    8
+   ],
+   "gran_tempalum": false,
+   "why": "año no-GT profundo"
+  }
+ ]
+}

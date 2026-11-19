@@ -1,0 +1,9 @@
+prefix=@PREFIX@
+libdir=${{prefix}}/lib
+includedir=${{prefix}}/include
+
+Name: gerarion-core
+Description: libgerarion-core - nucleo GUS standalone (calendario AY/DY, formato canonico 32/29, quick_verify, instantes int64+nanos); sin reloj de SO ni tabla TAI
+Version: @VERSION@
+Libs: -L${{libdir}} -lgerarion-core
+Cflags: -I${{includedir}}/gerarion
