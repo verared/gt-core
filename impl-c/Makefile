@@ -1,12 +1,12 @@
 # Makefile standalone de libgerarion-core (export gt-core).
-# Generado por tools/export_module.py de {source} v{version} ({date}).
+# Generado por tools/export_module.py de verared/gerarion v3.2.2 (2026-11-19).
 # Núcleo TCJ+GUS: sin malloc, sin reloj de SO, sin tabla TAI-UTC, sin
 # dependencias externas. Compilable con GCC y Clang (C11, -Werror).
 
 NAME = gerarion-core
 MAJOR = 3
 MINOR = 2
-PATCH = 0
+PATCH = 2
 
 PREFIX ?= /usr/local
 INCLUDEDIR ?= $(PREFIX)/include

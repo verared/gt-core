@@ -1,6 +1,6 @@
 # Standalone TCJ + GUS core
 
-Part of the **Gerarion** reference suite (verared/gerarion `v3.2.0`,
+Part of the **Gerarion** reference suite (verared/gerarion `v3.2.2`,
 Gerarion Universal Standard). This directory is an **export package**
 ready to be published (or consumed) as the `verared/gt-core` satellite
 repository; it keeps the base repository's relative layout so modules
@@ -12,9 +12,11 @@ The minimum normative core: AY/DY calendar with Great Tempalum, canonical 32/29-
 
 ## Normative status
 
-- **Estable** — baseline `v3.2.0` (frozen arithmetic and vectors:
+- **Estable** (`maturity: stable`) — baseline `v3.2.2` (frozen arithmetic and vectors:
   GUS v3.0.0).
 - Included specification(s): `docs/specs/TCJ.es.md`, `docs/specs/TCJ.en.md`, `docs/specs/GUS.es.md`, `docs/specs/GUS.en.md`
+- Verifiable integrity manifest: [`EXPORT-MANIFEST.json`](EXPORT-MANIFEST.json)
+- Official compatibility matrix: [`COMPATIBILITY.md`](https://github.com/verared/gerarion/blob/v3.2.2/COMPATIBILITY.md)
 
 ## Dependencies
 
@@ -22,6 +24,7 @@ The minimum normative core: AY/DY calendar with Great Tempalum, canonical 32/29-
 
 ## Contents
 
+- `EXPORT-MANIFEST.json`
 - `LICENSE`
 - `NOTICE`
 - `docs/specs/GUS.en.md`
@@ -59,10 +62,16 @@ reuse lint                                    # licensing 100 %
 make -C impl-c smoke                          # núcleo standalone
 ```
 
+From `verared/gerarion`, full integrity against `EXPORT-MANIFEST.json` is verified with:
+
+```bash
+python3 tools/export_module.py --verify-existing /path/to/gt-core
+```
+
 ## Synchronisation contract with `verared/gerarion`
 
 This package is **generated, never hand-edited**: it is regenerated
-byte for byte from `verared/gerarion v3.2.0` with
+byte for byte from `verared/gerarion v3.2.2` with
 `python3 tools/export_module.py --module gt-core --out <dir>`. The
 normative source of truth (specifications, CC0 vectors, reference
 cores for the three platforms, and the full test suite) stays in
