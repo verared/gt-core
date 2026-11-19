@@ -1,7 +1,7 @@
 /*
  * smoke.c — humo del núcleo standalone (export gt-core).
  * Compila y corre SOLO con core/gus_core.h + libgerarion-core.a.
- * Generado por tools/export_module.py de verared/gerarion v3.2.2.
+ * Generado por tools/export_module.py de verared/gerarion v3.3.0.
  */
 
 #include "core/gus_core.h"
